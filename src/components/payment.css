@@ -1,0 +1,91 @@
+.success-message {
+    text-align: center;
+    color: #28a745;  /* Match book button green for success */
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;  /* Light bg like calendar */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.error-message {
+    color: #dc3545;  /* Red for errors, contrasting but professional */
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px 20px;  /* Match time-slot padding */
+    margin-bottom: 20px;  /* Consistent spacing like sections */
+    border: 1px solid #dee2e6;  /* Same border as calendar/time slots */
+    border-radius: 6px;
+    font-size: 16px;
+    color: #495057;  /* Text color match */
+    background-color: #f8f9fa;  /* Light bg for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;  /* Smooth like hovers */
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007bff;  /* Blue accent on focus, like calendar buttons */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);  /* Subtle glow */
+    outline: none;
+}
+
+form select {
+    cursor: pointer;  /* Like clickable elements */
+}
+
+/* Stripe CardElement styling (match input fields) */
+.CardElement {
+    padding: 12px 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.CardElement--focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.CardElement--invalid {
+    border-color: #dc3545;
+}
+
+/* Pay button (match book-appointment-btn: green, full width, transitions) */
+#pay-btn {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background-color: #28a745;  /* Green like book button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+#pay-btn:disabled {
+    background-color: #a5d6a7;  /* Disabled green match */
+    cursor: not-allowed;
+}
+
+#pay-btn:not(:disabled):hover {
+    background-color: #218838;  /* Hover green match */
+    box-shadow: 0 4px 12px rgba(33, 136, 56, 0.25);  /* Shadow match */
+}

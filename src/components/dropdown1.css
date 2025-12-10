@@ -1,0 +1,58 @@
+/* Translation Button - Cosmetology Palette */
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  color: #5a4a4a;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.dropdown button:hover {
+  color: #a8556e;
+  background: linear-gradient(135deg, #f8e8e8 0%, #f0d5d5 100%);
+  transform: translateY(-2px);
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  right: 0;
+  margin-top: 0.5rem;
+  border: 1px solid #e8d5d5;
+  z-index: 1000;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.nav-drop {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-drop a {
+  color: #5a4a4a;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-drop a:hover {
+  background: linear-gradient(135deg, #f8e8e8 0%, #f0d5d5 100%);
+  color: #a8556e;
+}

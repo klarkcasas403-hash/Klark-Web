@@ -1,0 +1,183 @@
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+margin: 0;
+padding: 40px;
+color: #333;
+}
+
+.appointment-container {
+background: #ffffff;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 6px 20px rgba(168, 85, 110, 0.15);
+max-width: 700px;
+width: 100%;
+}
+
+.appointment-container h2 {
+text-align: center;
+color: #a8556e;
+margin-bottom: 30px;
+font-size: 28px;
+font-weight: 600;
+}
+
+.appointment-section {
+margin-bottom: 35px;
+}
+
+.appointment-section h3 {
+border-bottom: 3px solid #e8d5d5;
+padding-bottom: 12px;
+margin-bottom: 20px;
+color: #a8556e;
+font-size: 20px;
+font-weight: 500;
+}
+
+/* Calendar styling */
+.calendar-container {
+padding: 15px;
+border: 1px solid #e8d5d5;
+border-radius: 8px;
+background-color: #fff;
+}
+
+.calendar-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.calendar-header button {
+background: none;
+border: none;
+font-size: 28px;
+cursor: pointer;
+color: #a8556e;
+padding: 5px 15px;
+transition: color 0.2s ease;
+}
+
+.calendar-header button:hover {
+color: #c08497;
+}
+
+#month-year {
+font-size: 22px;
+font-weight: 600;
+color: #5a4a4a;
+}
+
+.weekdays {
+display: flex;
+text-align: center;
+color: #5a4a4a;
+font-size: 16px;
+margin-bottom: 15px;
+font-weight: 500;
+}
+
+.weekdays div {
+width: 14.28%;
+}
+
+.calendar-dates {
+display: flex;
+flex-wrap: wrap;
+}
+
+.calendar-dates div {
+width: 14.28%;
+text-align: center;
+padding: 15px 0;
+cursor: pointer;
+font-size: 16px;
+border-radius: 6px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar-dates .day:hover {
+background-color: #f8e8e8;
+}
+
+.calendar-dates .inactive {
+color: #ced4da;
+cursor: not-allowed;
+}
+
+.calendar-dates .selected {
+background: linear-gradient(135deg, #a8556e 0%, #c08497 100%);
+color: #ffffff;
+font-weight: 600;
+}
+
+/* Time slot styling */
+.time-slots {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.time-slot {
+background-color: #f8f9fa;
+padding: 12px 20px;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+border: 1px solid #e8d5d5;
+font-size: 16px;
+color: #5a4a4a;
+}
+
+.time-slot:hover {
+background-color: #f8e8e8;
+box-shadow: 0 2px 8px rgba(168, 85, 110, 0.1);
+border-color: #a8556e;
+}
+
+.time-slot.selected {
+background: linear-gradient(135deg, #a8556e 0%, #c08497 100%);
+color: #ffffff;
+border-color: #a8556e;
+box-shadow: 0 4px 12px rgba(168, 85, 110, 0.25);
+}
+
+#time-selection-info {
+color: #adb5bd;
+font-style: italic;
+text-align: center;
+width: 100%;
+font-size: 16px;
+}
+
+#book-appointment-btn {
+display: block;
+width: 100%;
+padding: 18px;
+background: linear-gradient(135deg, #a8556e 0%, #c08497 100%);
+color: #ffffff;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+cursor: pointer;
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+margin-top: 25px;
+font-weight: 500;
+}
+
+#book-appointment-btn:disabled {
+background: #d4a5a5;
+cursor: not-allowed;
+opacity: 0.6;
+}
+
+#book-appointment-btn:not(:disabled):hover {
+background: linear-gradient(135deg, #c08497 0%, #a8556e 100%);
+box-shadow: 0 4px 12px rgba(168, 85, 110, 0.3);
+}
