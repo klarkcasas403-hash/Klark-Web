@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import { Home } from './Pages/home.jsx';
 import { Services } from './Pages/services.jsx';
 import { Finale } from './Pages/finale.jsx';
 import { Reviews } from './Pages/reviews.jsx';
 import { TranslationProvider } from './context/TranslationContext.jsx';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: '/', element: <Home /> },
   { path: '/home', element: <Home /> },
   { path: '/services', element: <Services /> },
@@ -16,6 +16,7 @@ const router = createBrowserRouter([
   { path: '/reviews', element: <Reviews /> },
   { path: '*', element: <h1>404 - Page Not Found</h1> },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
